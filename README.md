@@ -1,5 +1,5 @@
-# Migarte-Outlook-1-Year-Mail-to-One-Drive-via-Powershell-Code
-Migarte Outlook 1 Year Mail  to One Drive via Powershell Code
+# Migrate-Outlook-1-Year-Mail-to-One-Drive-via-Powershell-Code
+Migrate Outlook 1 Year Mail  to One Drive via Powershell Code
 
 First Login to:
 ------------------
