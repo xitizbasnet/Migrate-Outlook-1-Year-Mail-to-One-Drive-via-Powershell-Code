@@ -4,7 +4,7 @@ Migarte Outlook 1 Year Mail  to One Drive via Powersheell Code
 First Login to:
 ------------------
 1. https://compliance.microsoft.com/
-a. Data Life Cycle Management
+*  Data Life Cycle Management
 ******************************************
 i. Exchange(Legacy)
 * MRM Retention Tags
@@ -45,8 +45,8 @@ Second Login to:
    *  See down:  + Retention Policy
                  + Default MRM Policy
                  + Mangage Mailbox Policies
-   h. Go to: Retention Policy - and select Archieve 1 Years Mail
-   i. Save
+   *  Go to: Retention Policy - and select Archieve 1 Years Mail
+   *  Save
 ***************************************
 
 Third Power Shell to:
