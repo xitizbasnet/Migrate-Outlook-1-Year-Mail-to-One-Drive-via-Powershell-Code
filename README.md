@@ -36,15 +36,15 @@ Second Login to:
 1. https://admin.exchange.microsoft.com/#/homepage
 2. Go to exchange
 3. Receipt
-   a. Mailboxes
-   b. Search user name: xitiz.basnet@xitiztechservices.com
-   c. Select user: xitiz.basnet@xitiztechservices.com
-   d. Go to the: Others
-   e. Mailbox archieve(Manage Mailbox Archieve)
-   f. Go to: Mailbox archeieve and see the Button (changed from off to ON)
-   g. See down: Retention Policy
-                 Default MRM Policy
-                 Mangage Mailbox Policies
+   *  Mailboxes
+   *  Search user name: xitiz.basnet@xitiztechservices.com
+   *  Select user: xitiz.basnet@xitiztechservices.com
+   *  Go to the: Others
+   *  Mailbox archieve(Manage Mailbox Archieve)
+   *  Go to: Mailbox archeieve and see the Button (changed from off to ON)
+   *  See down:  + Retention Policy
+                 + Default MRM Policy
+                 + Mangage Mailbox Policies
    h. Go to: Retention Policy - and select Archieve 1 Years Mail
    i. Save
 ***************************************
@@ -55,15 +55,15 @@ Administrator: Windows PowerShell (86)
 
 *** START****
 
-PS C:\Users\Administrator> Get-Module -ListAvailable | Where-Object { $_.Name -eq "ExchangeOnlineManagement" }
-PS C:\Users\Administrator> Install-Module ExchangeOnlineManagement
-PS C:\Users\Administrator> Update-Module -Name ExchangeOnlineManagement
-PS C:\Users\Administrator> Import-Module ExchangeOnlineManagement
-PS C:\Users\Administrator> Connect-ExchangeOnline
-PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
-PS C:\Users\Administrator> Get-Mailbox xitiz.basnet@xitiztechservices.com | FL AutoExpandingArchiveEnabled
-PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
-PS C:\Users\Administrator> Start-ManagedFolderAssistant -Identity xitiz.basnet@xitiztechservices.com
+* PS C:\Users\Administrator> Get-Module -ListAvailable | Where-Object { $_.Name -eq "ExchangeOnlineManagement" }
+* PS C:\Users\Administrator> Install-Module ExchangeOnlineManagement
+* PS C:\Users\Administrator> Update-Module -Name ExchangeOnlineManagement
+* PS C:\Users\Administrator> Import-Module ExchangeOnlineManagement
+* PS C:\Users\Administrator> Connect-ExchangeOnline
+* PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
+* PS C:\Users\Administrator> Get-Mailbox xitiz.basnet@xitiztechservices.com | FL AutoExpandingArchiveEnabled
+* PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
+* PS C:\Users\Administrator> Start-ManagedFolderAssistant -Identity xitiz.basnet@xitiztechservices.com
 
 *** END****
 
@@ -71,7 +71,7 @@ PS C:\Users\Administrator> Start-ManagedFolderAssistant -Identity xitiz.basnet@x
 
 Fourth Waiting to:
 --------------------
-Note: It may takes 24hour to 78 hours time to completely archieve the mail.
+**** Note: It may takes 24hour to 78 hours time to completely archieve the mail.
 ****************************************
 
 
