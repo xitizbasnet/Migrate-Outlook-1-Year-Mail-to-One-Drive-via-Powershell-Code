@@ -1,2 +1,90 @@
 # Migarte-Outlook-1-Year-Mail-to-One-Drive-via-Powersheell-Code
 Migarte Outlook 1 Year Mail  to One Drive via Powersheell Code
+
+First Login to:
+------------------
+1. https://compliance.microsoft.com/
+a. Data Life Cycle Management
+******************************************
+i. Exchange(Legacy)
+* MRM Retention Tags
+* + New Retention Tag
+  + Archieve 1 Years Mail
+  + Next
+  + Tick Radio Button: Automatically to entire mailbox(default)
+  + Next
+  + Define Retention Setting
+  + click radio button: When item reaches the following age (in days)
+  + Insert in a blank box: 365
+  + Click radio button: Move item to archieve
+  + Next
+  + Submit
+***************************************
+ii. Exchange(Legacy)
+* MRM Retention policy
+* + New Policy
+* Archieve 1 Years Mail
+* Add
+* + Add tag
+  + Next
+  + Submit
+***************************************
+
+Second Login to:
+--------------------
+
+1. https://admin.exchange.microsoft.com/#/homepage
+2. Go to exchange
+3. Receipt
+   a. Mailboxes
+   b. Search user name: xitiz.basnet@xitiztechservices.com
+   c. Select user: xitiz.basnet@xitiztechservices.com
+   d. Go to the: Others
+   e. Mailbox archieve(Manage Mailbox Archieve)
+   f. Go to: Mailbox archeieve and see the Button (changed from off to ON)
+   g. See down: Retention Policy
+                 Default MRM Policy
+                 Mangage Mailbox Policies
+   h. Go to: Retention Policy - and select Archieve 1 Years Mail
+   i. Save
+***************************************
+
+Third Power Shell to:
+--------------------
+Administrator: Windows PowerShell (86)
+
+*** START****
+
+PS C:\Users\Administrator> Get-Module -ListAvailable | Where-Object { $_.Name -eq "ExchangeOnlineManagement" }
+PS C:\Users\Administrator> Install-Module ExchangeOnlineManagement
+PS C:\Users\Administrator> Update-Module -Name ExchangeOnlineManagement
+PS C:\Users\Administrator> Import-Module ExchangeOnlineManagement
+PS C:\Users\Administrator> Connect-ExchangeOnline
+PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
+PS C:\Users\Administrator> Get-Mailbox xitiz.basnet@xitiztechservices.com | FL AutoExpandingArchiveEnabled
+PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
+PS C:\Users\Administrator> Start-ManagedFolderAssistant -Identity xitiz.basnet@xitiztechservices.com
+
+*** END****
+
+****************************************
+
+Fourth Waiting to:
+--------------------
+Note: It may takes 24hour to 78 hours time to completely archieve the mail.
+****************************************
+
+
+--------------------
+Thank You
+--------------------
+
+
+
+
+
+   
+
+
+
+
