@@ -42,6 +42,10 @@ Second Login to:
    *  Go to the: Others
    *  Mailbox archieve(Manage Mailbox Archieve)
    *  Go to: Mailbox archeieve and see the Button (changed from off to ON)
+   *  Get Back
+   *  Go to the: Mailbox
+   *  Look after the Retention Policy
+           - Click: Manage mailbox policies
    *  See down:  + Retention Policy
                  + Default MRM Policy
                  + Mangage Mailbox Policies
