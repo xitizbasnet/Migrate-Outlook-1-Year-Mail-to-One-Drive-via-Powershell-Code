@@ -35,7 +35,7 @@ Second Login to:
 
 1. https://admin.exchange.microsoft.com/#/homepage
 2. Go to exchange
-3. Receipt
+3. Receipts
    *  Mailboxes
    *  Search user name: xitiz.basnet@xitiztechservices.com
    *  Select user: xitiz.basnet@xitiztechservices.com
