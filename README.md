@@ -63,7 +63,14 @@ Administrator: Windows PowerShell (86)
 * PS C:\Users\Administrator> Install-Module ExchangeOnlineManagement
 * PS C:\Users\Administrator> Update-Module -Name ExchangeOnlineManagement
 * PS C:\Users\Administrator> Import-Module ExchangeOnlineManagement
-* PS C:\Users\Administrator> Connect-ExchangeOnline
+* PS C:\Users\Administrator> Connect-ExchangeOnline    
+* PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
+* PS C:\Users\Administrator> Get-Mailbox xitiz.basnet@xitiztechservices.com | FL AutoExpandingArchiveEnabled
+* PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
+* PS C:\Users\Administrator> Start-ManagedFolderAssistant -Identity xitiz.basnet@xitiztechservices.com
+  
+### (Note: If it does not start and face some error - Follow another step From begining)
+* PS C:\Users\Administrator> Connect-ExchangeOnline -UserPrincipalName xitiz.basnet@xitiztechservices.com;   
 * PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
 * PS C:\Users\Administrator> Get-Mailbox xitiz.basnet@xitiztechservices.com | FL AutoExpandingArchiveEnabled
 * PS C:\Users\Administrator> Enable-Mailbox xitiz.basnet@xitiztechservices.com -AutoExpandingArchive
